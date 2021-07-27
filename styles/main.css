@@ -101,3 +101,7 @@ button i {
   width: 100%;
   display: block;
 }
+
+.movies-carousel {
+  margin-top: 10px;
+}
