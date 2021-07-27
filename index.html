@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NETFLIX CLONE</title>
+    <title>Netflix Clone</title>
+    <!-- Linking my own style sheet -->
     <link rel="stylesheet" href="styles/main.css" />
+    <!-- Linking jQuery Owl plugin for carousel -->
+    <link rel="stylesheet" href="styles/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css" />
   </head>
   <body>
     <header>
@@ -41,10 +45,96 @@
           </button>
         </div>
       </div>
+      <div class="movies-carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/breakingbad.jpg"
+              alt="Breaking Bad"
+            />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/chernobyl.jpg" alt="Chernobyl" />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/dexter.jpg" alt="Dexter" />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/friends.jpg" alt="Friends" />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/house.jpg" alt="House" />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/howimetyourmother.jpg"
+              alt="How I Met Your Mother"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/peakyblinders.jpg"
+              alt="Peaky Blinders"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/prisonbreak.jpg"
+              alt="Prison Break"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/rickandmorty.jpg"
+              alt="Rick and Morty"
+            />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/southpark.jpg" alt="South Park" />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/spartacus.jpg" alt="Spartacus" />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/strangerthings.jpg"
+              alt="Stranger Things"
+            />
+          </div>
+          <div class="item">
+            <img class="movie-box" src="img/theoffice.jpg" alt="The Office" />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/thesimpsons.jpg"
+              alt="The Simpsons"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="movie-box"
+              src="img/zodiacknights.jpg"
+              alt="Zodiac Knights"
+            />
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- To use fonts awesome for website icons -->
     <script
       src="https://kit.fontawesome.com/d0930e9b1f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Linking js files for Owl jQuery plugin, used for website carousel -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
   </body>
 </html>
