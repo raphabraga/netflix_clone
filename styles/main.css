@@ -1,6 +1,53 @@
-body {
-  background-color: blue;
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+  --branco: #aaa;
+  --fonte-principal: "Times New Roman";
+  --fonte-logo: "Arial Black";
 }
 
-.container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base CSS selector*/
+
+body {
+  background: var(--preta);
+  font-family: var(--fonte-principal), Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-size: 40px;
+  margin-left: 5px;
+  font-family: var(--fonte-logo), Times, serif;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--branco);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Main movie CSS Selectors */
+
+.main-movie {
+  background: url("/img/got-cover");
+  font-size: 16px;
+  height: 400px;
+  background-size: cover;
 }
