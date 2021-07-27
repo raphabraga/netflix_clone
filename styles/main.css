@@ -1,9 +1,9 @@
 :root {
-  --vermelho: #e50914;
-  --preta: #141414;
-  --branco: #aaa;
-  --fonte-principal: "Times New Roman";
-  --fonte-logo: "Arial Black";
+  --nf_red: #e50914;
+  --nf_black: #141414;
+  --nf_white: #aaa;
+  --main_font: Calibri;
+  --logo_font: "Franklin Gothic Medium";
 }
 
 * {
@@ -15,8 +15,8 @@
 /* Base CSS selector*/
 
 body {
-  background: var(--preta);
-  font-family: var(--fonte-principal), Times, serif;
+  background: var(--nf_black);
+  font-family: var(--main_font), Times, serif;
   color: white;
 }
 
@@ -27,15 +27,15 @@ header .container {
 }
 
 header .logo {
-  color: var(--vermelho);
+  color: var(--nf_red);
   font-size: 40px;
   margin-left: 5px;
-  font-family: var(--fonte-logo), Times, serif;
+  font-family: var(--logo_font), Cambria, serif;
 }
 
 header nav a {
   text-decoration: none;
-  color: var(--branco);
+  color: var(--nf_white);
   margin-right: 10px;
 }
 
@@ -46,8 +46,52 @@ header nav a:hover {
 /* Main movie CSS Selectors */
 
 .main-movie {
-  background: url("/img/got-cover");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/got-cover.jpg");
   font-size: 16px;
-  height: 400px;
+  height: 500px;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.description {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: "Trebuchet MS" S, Arial, sans-serif;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+button i {
+  margin-right: 7px;
+}
+
+.container {
+  margin-left: 15px;
+}
+
+.main-movie .container {
+  width: 75%;
 }
